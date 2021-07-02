@@ -15,7 +15,7 @@ ReactDOM.render(
   document.getElementById("root")
 );
 {
-  /* 2:12:24 */
+  /* 2:12:24 start video from here */
 }
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
