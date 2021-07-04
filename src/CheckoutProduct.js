@@ -20,7 +20,7 @@ function CheckoutProduct({ id, image, title, price, rating }) {
             })}
         </div>
         <button>Remove from Basket</button>
-        {/* 2:50:23 start */}
+        {/* 2:50:23 */}
       </div>
     </div>
   );
