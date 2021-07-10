@@ -30,7 +30,7 @@ function CheckoutProduct({ id, image, title, price, rating }) {
             })}
         </div>
         <button onClick={removeFromBasket}>Remove from Basket</button>
-        {/*3:22:20 */}
+        {/* 3:22:20 */}
       </div>
     </div>
   );
