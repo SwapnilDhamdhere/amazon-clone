@@ -19,7 +19,7 @@ function Login() {
       <Link to="/">
         <img
           className="login__logo"
-          src="http://pngimg.com/uploads/amazon/amazon_PNG25.png"
+          src="https://www.searchpng.com/wp-content/uploads/2019/01/Amazon-Logo.png"
         />
       </Link>
 
@@ -56,7 +56,7 @@ function Login() {
         <button className="login__registerButton" onClick={register}>
           Create Amazon Account
         </button>
-        {/* 3:51:22 */}
+        {/* 3:51:22  not matching recheck*/}
       </div>
     </div>
   );
