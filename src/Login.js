@@ -1,17 +1,33 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import "./Login.css";
+import { auth } from "./firebase";
 
 function Login() {
+  const history = useHistory();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
   const signIn = (e) => {
     e.preventDefault();
+    auth
+      .signInWithEmailAndPassword(email, password)
+      .then((auth) => {
+        history.push("/");
+      })
+      .catch((error) => alert(error.message));
   };
 
   const register = (e) => {
     e.preventDefault();
+    auth
+      .createUserWithEmailAndPassword(email, password)
+      .then((auth) => {
+        if (auth) {
+          history.push("/");
+        }
+      })
+      .catch((error) => alert(error.message));
   };
 
   return (
@@ -56,7 +72,7 @@ function Login() {
         <button className="login__registerButton" onClick={register}>
           Create Amazon Account
         </button>
-        {/* 3:51:22  not matching recheck*/}
+        {/* 4:09:16 */}
       </div>
     </div>
   );
