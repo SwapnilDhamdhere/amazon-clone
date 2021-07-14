@@ -28,6 +28,7 @@ function Checkout() {
             />
           ))}
         </div>
+        {/* 4:44:00 start from here */}
       </div>
       <div className="checkout__right">
         <Subtotal />
